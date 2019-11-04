@@ -13,6 +13,12 @@
 
 &emsp;&emsp;F2、F3、F4将依次开放！
 
+&emsp;&emsp;嫌慢？“**Insert**”！快了？“**Delete**”！
+
+&emsp;&emsp;||=↑，▷=↓！看不懂自便！
+
+&emsp;&emsp;た键隐藏蟆法禁书，它的痕迹不会抹除；正确键寻回遗失记忆，它的空间不会白费。
+
 &emsp;&emsp;如果仍有疑问，请参考[数据删除]群中的教学GIF或联系开发者！——开发者为高中生，无收入，单身，性取向正常，您应该考虑……Watching、Star是我开发的动力！
 
 
@@ -27,15 +33,26 @@
 &emsp;&emsp;支付宝转账：13\*\*\*\*\*\*\*31
 
 
+### 更新日志
+
+##### &emsp;&emsp;2019-11-03
+&emsp;&emsp;加入暂停功能，但暂停后不可恢复阅读。**知足吧**！<br>
+&emsp;&emsp;加入隐藏功能，可以用这个脚本来考验记忆力了呢！<br>
+
+##### &emsp;&emsp;2019-11-04
+&emsp;&emsp;加入（完善的）暂停功能，我们大可不必白白用掉三次机会。<br>
+&emsp;&emsp;加入变速功能以兼容“量子波动速读”者。<br>
+
+
 ### To-do-list
 
-+ 加入速度调整功能
-+ 加入暂停功能
-+ 拦截方向键，告别操作时的页面滚动
-+ 修改标题为“TFBios&Gals”，达成颓废领域的性别平等
++ 阻断键盘事件，告别操作时的页面滚动
++ 修改标题为“TFBios&Gals”，达成颓废领域的性别平权
 
 
 ### 特别鸣谢
+
+> [Chrome Web Store](https://chrome.google.com/webstore/)听到消息后第一时间赶来求合作，本着先来后到先到先得的原则，本项目已与[Tamper Monkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)达成长期稳定友好合作！（它Google想被收购？排在Microsoft后面吧！）
 
 > [白老](https://github.com/Bj2002)给了我项目的灵感，直接促成立项。
 
