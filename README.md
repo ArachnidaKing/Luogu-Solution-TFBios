@@ -60,4 +60,4 @@
 
 > [[数据删除]](https://github.com/zidaojiaosili)，俗话说得好压力就是动力。
 
-> [Tommy_Clas](https://www.luogu.org/blog/Tommyclas)被作者单方面达成友好合作，提供大量优质文字用以实验。
+> [Tommy_Clas](https://www.luogu.org/blog/Tommyclas/)被作者单方面达成友好合作，提供大量优质文字用以实验。
