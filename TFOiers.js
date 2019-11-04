@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         TFOiers
-// @version      1.41
+// @version      2.17
 // @namespace    http://tampermonkey.net/
 // @description  Be TF!!!
 // @author       ArachnidaKing
@@ -12,7 +12,16 @@
 {
 	'use strict';
 	//
-	const up=38,down=40;
+	const leftArrow=37;
+	const upArrow=38;
+	const rightArrow=39;
+	const downArrow=40;
+	const insertKey=45;
+	const deleteKey=46;
+	//
+	const toHide=leftArrow;
+	const toDisplay=rightArrow;
+	const middleTime=1000;
 	//
 	var F2Code=113;
 	var inputs=document.getElementsByTagName("textarea");
@@ -20,6 +29,8 @@
 	//
 	var playPositionId;
 	var novelNode;
+	var dq_middleTime=middleTime;
+	var inStopForTime=0;
 	document.onkeydown=function(event)
 	{
 		let dq_keyCode=event.keyCode;
@@ -44,19 +55,28 @@
 		}
 		//
 		novelNode=document.getElementById("novelText");
-		if(dq_keyCode==up)
+		if(dq_keyCode==toHide)
 		{
 			if(novelNode)
 			{
 				novelNode.style.visibility="hidden";
 			}
 		}
-		else if(dq_keyCode==down)
+		else if(dq_keyCode==toDisplay)
 		{
 			if(novelNode)
 			{
 				novelNode.style.visibility="visible";
 			}
+		}
+		//
+		if(dq_keyCode==upArrow)
+		{
+			//暂停功能实现
+		}
+		else if(dq_keyCode==downArrow)
+		{
+			//继续功能实现
 		}
 	};
 	////
@@ -90,7 +110,7 @@
 		//
 		let dq_paragraph;
 		let f=0;
-		for(let i=0;i<20;++i)
+		var displayNewText=function()
 		{
 			if(novelTextLength-char_p-1<=lengthPerParagraph)
 			{
@@ -98,16 +118,18 @@
 			}
 			dq_paragraph=novelText.substr(char_p,lengthPerParagraph);
 			char_p+=lengthPerParagraph;
+			textBoard.innerHTML=dq_paragraph;
 			//
-			window.setTimeout(function(node,text)
+			if(!f)
 			{
-				node.innerHTML=text;
-			},12000*i,textBoard,dq_paragraph);
-			//
-			if(f)
+				setTimeout(displayNewText,dq_middleTime);
+			}
+			else
 			{
-				break;
+				setTimeout(function(){textBoard.style.display="none";},dq_middleTime);
 			}
 		}
+		//
+		displayNewText();
 	}
 })();
